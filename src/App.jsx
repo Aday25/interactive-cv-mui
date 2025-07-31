@@ -7,7 +7,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Skills from './pages/Skills';
 import Certificates from './pages/Certificates';
-import ThemeDemo from './pages/ThemeDemo';
+
 
 function App() {
   return (
@@ -19,7 +19,6 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/certificates" element={<Certificates />} />
-          <Route path="/theme" element={<ThemeDemo />} /> {/* ✅ nueva ruta */}
         </Routes>
       </Container>
     </Router>
