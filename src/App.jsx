@@ -1,7 +1,7 @@
 // Este componente es el núcleo de la aplicación. Define el sistema de rutas (React Router)
 // y organiza la estructura principal: una barra de navegación + el contenido dinámico según la ruta.
 
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { Container } from '@mui/material';
 import Navbar from './components/Navbar';
 
