@@ -15,3 +15,12 @@ Interactive CV MUI muestra habilidades, certificados y experiencia profesional c
 Para clonar, instalar y arrancar el proyecto, así como para personalizar contenido, revisa la guía completa en PDF aquí:
 
 [guia-clonar.pdf](https://github.com/Aday25/interactive-cv-mui/blob/main/public/guia-clonar.pdf)
+
+## Guía de Código
+
+Para facilitar la comprensión del código y la estructura del proyecto, aquí tenéis una guía en PDF con explicaciones detalladas de los componentes principales, su funcionamiento y la organización general.
+
+Podéis descargarla y consultarla aquí:  
+[Guía de Código (PDF)](https://github.com/Aday25/interactive-cv-mui/blob/main/public/guia-codigo.pdf)
+
+Esta guía es ideal para seguir el proyecto paso a paso, entender cada parte y poder personalizarlo con mayor facilidad.
