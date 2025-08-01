@@ -4,7 +4,7 @@
 import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { Container, Box, Typography, Paper } from '@mui/material';
 import Navbar from './components/Navbar';
-import coverImage from './assets/cover.png';
+import coverImage from './assets/cover.png';  // Imagen portada
 
 import Home from './pages/Home';
 import About from './pages/About';
@@ -17,16 +17,18 @@ function App() {
       {/* Navbar común a todas las páginas */}
       <Navbar />
 
-      {/* Contenedor de Material UI con un margen superior */}
+      {/* Contenedor principal con margen superior para separar del navbar */}
       <Container sx={{ mt: 4 }}>
-        {/* Rutas definidas: cada una carga un componente diferente */}
+        {/* Definición de rutas */}
         <Routes>
+          {/* Rutas para las páginas principales */}
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/certificates" element={<Certificates />} />
+
+          {/* Ruta raíz: muestra una presentación simple con foto y mensaje */}
           <Route path="/" element={
-            // Aquí para la ruta raíz vamos a mostrar un componente sencillo y vistoso
             <Paper
               elevation={6}
               sx={{
@@ -38,12 +40,12 @@ function App() {
                 textAlign: 'center'
               }}
             >
-              {/* Texto de presentación */}
+              {/* Mensaje de bienvenida */}
               <Typography variant="h3" gutterBottom>
-                Conoce a...
+                ¡Bienvenid@ a mi web!
               </Typography>
-              
-              {/* Imagen con estilo */}
+
+              {/* Imagen de portada con estilos */}
               <Box
                 component="img"
                 src={coverImage}
@@ -54,13 +56,11 @@ function App() {
                   boxShadow: '0 4px 12px rgba(0,0,0,0.3)',
                 }}
               />
-
-              {/* Mensaje de bienvenida */}
-              <Typography variant="h6" sx={{ mt: 3 }}>
-                ¡Bienvenid@ a mi web!
-              </Typography>
             </Paper>
           } />
+
+          {/* Redirigir cualquier ruta desconocida a /home */}
+          <Route path="*" element={<Navigate to="/home" replace />} />
         </Routes>
       </Container>
     </Router>
