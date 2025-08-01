@@ -5,11 +5,13 @@ import PhoneIcon from '@mui/icons-material/Phone'
 import LocationOnIcon from '@mui/icons-material/LocationOn'
 import AccountCircleIcon from '@mui/icons-material/AccountCircle'
 import { motion, AnimatePresence } from 'framer-motion'
-import avatarImg from '../assets/avatar.png'  // Cambia por tu imagen
+import avatarImg from '../assets/avatar.png'  // Imagen de avatar
 
 export default function Home() {
+  // Estado para mostrar u ocultar los datos personales
   const [showData, setShowData] = useState(false)
 
+  // Datos personales con iconos y etiquetas
   const dataItems = [
     { icon: <AccountCircleIcon sx={{ color: '#1976d2', fontSize: 30 }} />, label: 'Miss Material UI' },
     { icon: <PhoneIcon sx={{ color: '#388e3c', fontSize: 30 }} />, label: '+34 600 123 456' },
@@ -18,6 +20,7 @@ export default function Home() {
   ]
 
   return (
+    // Caja principal animada con Framer Motion para hacer una entrada suave
     <Box
       component={motion.div}
       initial={{ opacity: 0, y: -20 }}
@@ -26,6 +29,7 @@ export default function Home() {
       textAlign="center"
       sx={{ mt: 5, px: 2 }}
     >
+      {/* Avatar con estilos, borde y efecto hover */}
       <Avatar
         src={avatarImg}
         alt="Miss Material UI"
@@ -44,9 +48,13 @@ export default function Home() {
           },
         }}
       />
+
+      {/* Título principal */}
       <Typography variant="h3" gutterBottom sx={{ fontWeight: 'bold', letterSpacing: 1 }}>
         ¡Hola! Soy Miss Material UI
       </Typography>
+
+      {/* Subtítulo o descripción con estilo */}
       <Typography
         variant="h6"
         sx={{
@@ -61,6 +69,7 @@ export default function Home() {
         Tu superheroína del desarrollo web, experta en construir interfaces increíbles con React y Material UI.
       </Typography>
 
+      {/* Botón para mostrar/ocultar datos personales */}
       <Button
         variant="contained"
         onClick={() => setShowData(prev => !prev)}
@@ -69,6 +78,7 @@ export default function Home() {
         {showData ? 'Ocultar datos personales' : 'Mostrar datos personales'}
       </Button>
 
+      {/* Animación de aparición/desaparición de los datos personales */}
       <AnimatePresence>
         {showData && (
           <Paper
@@ -88,6 +98,7 @@ export default function Home() {
               boxShadow: '0 8px 20px rgba(0,0,0,0.1)',
             }}
           >
+            {/* Título de la sección con efecto hover en el subrayado */}
             <Typography
               variant="h4"
               gutterBottom
@@ -115,6 +126,7 @@ export default function Home() {
               Datos personales
             </Typography>
 
+            {/* Listado de datos personales con iconos y estilos */}
             {dataItems.map(({ icon, label }, index) => (
               <Box
                 key={index}
