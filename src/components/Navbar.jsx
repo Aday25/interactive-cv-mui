@@ -8,7 +8,7 @@ import { useTheme } from '@mui/material/styles';
 
 // Definimos las opciones del menú con sus etiquetas y rutas
 const navItems = [
-  { label: 'Home', path: '/' },
+  { label: 'Home', path: '/home' },
   { label: 'About', path: '/about' },
   { label: 'Skills', path: '/skills' },
   { label: 'Certificates', path: '/certificates' },
