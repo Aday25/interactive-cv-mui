@@ -4,6 +4,7 @@
 import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { Container, Box, Typography, Paper } from '@mui/material';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import coverImage from './assets/cover.png';  // Imagen portada
 
 import Home from './pages/Home';
@@ -62,9 +63,12 @@ function App() {
           {/* Redirigir cualquier ruta desconocida a /home */}
           <Route path="*" element={<Navigate to="/home" replace />} />
         </Routes>
-      </Container>
+       </Container>
+
+      {/* Pie de página común */}
+      <Footer />
     </Router>
-  )
+  );
 }
 
 export default App;
