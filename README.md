@@ -1,4 +1,3 @@
-
 # 🧠 Interactive CV MUI
 
 Este proyecto es la **segunda parte** de la píldora formativa iniciada en [mui-card](https://github.com/Aday25/mui-card).  
@@ -17,6 +16,14 @@ Aquí ampliamos el aprendizaje para crear un **CV interactivo** con React y Mate
 
 ## 📚 Documentación y recursos
 
+> ⚠️ **Nota importante:**  
+> La versión online de la web está actualizada con cambios recientes (como la portada y el footer),  
+> pero los PDFs y recursos disponibles en este repositorio corresponden a la práctica realizada durante la clase.  
+> Puede que no reflejen todos los cambios actuales.  
+> En breve se actualizarán para que coincidan con la versión más reciente. ¡Gracias por la comprensión! 😇​
+
+---
+
 ### 📄 Guía para clonar el proyecto
 
 Para clonar, instalar y arrancar el proyecto, así como para personalizar contenido paso a paso:  
@@ -34,10 +41,9 @@ Ideal para seguir el proyecto y adaptarlo a tu gusto.
 
 ### 🖼️ Capturas de pantalla
 
-¿Quieres ver cómo queda visualmente antes de montarlo?  
-Este PDF muestra las principales secciones de la web en funcionamiento.  
+¿Quieres ver cómo queda visualmente antes de clonarlo?  
+Este PDF muestra las capturas de la web.  
 👉 [Capturas de pantalla (PDF)](https://github.com/Aday25/interactive-cv-mui/blob/main/public/capturas-web.pdf)
-
 
 ---
 
@@ -46,3 +52,9 @@ Este PDF muestra las principales secciones de la web en funcionamiento.
 Este proyecto no solo es una práctica técnica, sino una oportunidad para crear tu propio CV digital con estilo y personalidad.  
 ¡Anímate a modificarlo con tus imágenes, tus datos reales y tu historia profesional!  
 Tendrás un portfolio interactivo único que, además de ayudarte a practicar, te servirá como carta de presentación en el mundo real 💼🚀
+
+---
+
+<p align="center">
+  <img src="src/assets/logo.png" alt="Logo del proyecto" width="100" />
+</p>
