@@ -16,10 +16,6 @@ Aquí ampliamos el aprendizaje para crear un **CV interactivo** con React y Mate
 
 ## 📚 Documentación y recursos
 
----
-
-## 📚 Documentación y recursos
-
 > ⚠️ **Nota importante para mis compañeras de clase:**  
 > La versión online de la web está actualizada con cambios recientes (como la portada y el footer),  
 > pero los PDFs y recursos disponibles en este repositorio corresponden a la práctica realizada durante la clase.  
